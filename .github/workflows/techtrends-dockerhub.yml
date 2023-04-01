@@ -27,6 +27,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          context: "{{defaultContext}}:project"
+          context: "{{defaultContext}}"
           file: ./Dockerfile
           tags: ${{ secrets.DOCKER_USERNAME }}/techtrends:latest
